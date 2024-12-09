@@ -3,93 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Landing Page</title>
+    <title>Campus Universitario</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabecera -->
+    <!-- Encabezado -->
     <header class="header">
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg" alt="Pokémon Logo">
-        </div>
-        <nav class="nav">
+        <h1>Campus Universitario</h1>
+        <nav>
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Pokémon</a></li>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#explore">Explorar Pokémon</a></li>
-                <li><a href="#contact">Registro</a></li>
+                <li><a href="#edificios">Edificios</a></li>
+                <li><a href="#biblioteca">Biblioteca</a></li>
+                <li><a href="#cafeteria">Cafetería</a></li>
+                <li><a href="#areas-verdes">Áreas Verdes</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección Hero -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>¡Conviértete en un Maestro Pokémon!</h1>
-            <p>Explora, captura y entrena a los mejores Pokémon.</p>
-            <button id="catchBtn">¡Captura un Pokémon!</button>
-        </div>
-        <div id="pokemonContainer"></div>
-    </section>
+    <!-- Grid Principal -->
+    <main class="campus-grid">
+        <section class="item edificio" id="edificios">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlL6ndcBCk5RMdqJkgB_b6VEtG-6nVpxUZw&s" alt="Edificio de Clases">
+            <h2>Edificio de Clases</h2>
+            <p>Aulas modernas y espacios amplios equipados con tecnología avanzada para el aprendizaje efectivo.</p>
+        </section>
 
-    <!-- Sección Sobre Pokémon -->
-    <section id="about" class="about">
-        <h2>¿Qué es Pokémon?</h2>
-        <p>
-            Pokémon es una franquicia que comenzó como un videojuego y evolucionó hasta convertirse en un fenómeno mundial que incluye series animadas, juegos de cartas y películas.
-        </p>
-        <p>
-            ¡Explora el vasto mundo Pokémon, captura criaturas increíbles y compite para ser el mejor!
-        </p>
-    </section>
+        <section class="item biblioteca" id="biblioteca">
+            <img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg" alt="Biblioteca">
+            <h2>Biblioteca</h2>
+            <p>Una gran colección de libros y áreas tranquilas para estudiar y realizar investigaciones.</p>
+        </section>
 
-    <!-- Galería de Pokémon -->
-    <section id="gallery" class="gallery">
-        <h2>Galería de Pokémon Clásicos</h2>
-        <div class="gallery-container">
-            <div class="card">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
-                <p>Bulbasaur</p>
-            </div>
-            <div class="card">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
-                <p>Charmander</p>
-            </div>
-            <div class="card">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
-                <p>Squirtle</p>
-            </div>
-            <div class="card">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu">
-                <p>Pikachu</p>
-            </div>
-        </div>
-    </section>
+        <section class="item cafeteria" id="cafeteria">
+            <img src="https://images.pexels.com/photos/373892/pexels-photo-373892.jpeg" alt="Cafetería">
+            <h2>Cafetería</h2>
+            <p>Un espacio agradable donde los estudiantes disfrutan de comida variada y momentos de relajación.</p>
+        </section>
 
-    <!-- Explorar Pokémon -->
-    <section id="explore" class="explore">
-        <h2>Explora Pokémon Aleatorios</h2>
-        <button id="loadPokemonBtn">Cargar Pokémon</button>
-        <div id="randomPokemon"></div>
-    </section>
+        <section class="item laboratorio">
+            <img src="https://images.pexels.com/photos/256262/pexels-photo-256262.jpeg" alt="Laboratorio">
+            <h2>Laboratorio</h2>
+            <p>Laboratorios equipados para experimentos científicos y prácticas de investigación.</p>
+        </section>
 
-    <!-- Registro -->
-    <section id="contact" class="contact">
-        <h2>¡Regístrate para recibir novedades!</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Tu Nombre" required>
-            <input type="email" id="email" placeholder="Tu Email" required>
-            <button type="submit">Registrarse</button>
-        </form>
-        <p id="formMessage"></p>
-    </section>
+        <section class="item areas-verdes" id="areas-verdes">
+            <img src="https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg" alt="Áreas Verdes">
+            <h2>Áreas Verdes</h2>
+            <p>Zonas naturales para relajarse, estudiar al aire libre o realizar actividades deportivas.</p>
+        </section>
 
-    <!-- Pie de Página -->
+        <section class="item gimnasio">
+            <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg" alt="Gimnasio">
+            <h2>Gimnasio</h2>
+            <p>Instalaciones deportivas completas para mantener un estilo de vida activo y saludable.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Pokémon Fan Page. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Campus Universitario. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Estilos CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        .header {
+            background-color: #004080;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .header nav ul li {
+            margin: 0 1rem;
+        }
+
+        .header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .header nav ul li a:hover {
+            color: #f0c040;
+        }
+
+        /* Grid Principal */
+        .campus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .item h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .item p {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .header nav ul {
+                flex-direction: column;
+            }
+
+            .header nav ul li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
 </body>
 </html>
